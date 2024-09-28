@@ -1,11 +1,14 @@
+html {
+    background-color: #1f2937;
+}
 html > * {
     font-family: Roboto !important;
     margin: 0px;
 }
 
 body > div {
-    padding: 0px 176px;
-    min-width: 400px;
+    padding: 16px 176px;
+    min-width: 250px;
 }
 
 .header {
@@ -16,11 +19,11 @@ body > div {
     justify-content: space-between;
     align-items: center;
     min-height: 80px;
+    flex-wrap: wrap;
 }
 
 .header-label {
     color: #f9faf8;
-    flex: 1;
 }
 
 ul {
@@ -28,6 +31,7 @@ ul {
     display: flex;
     gap: 16px;
     padding: 0px;
+    flex-wrap: wrap;
 }
 
 a, p {
@@ -41,9 +45,15 @@ a, p {
     background-color: #1f2937;
     display: flex;
     gap: 56px;
-    align-items: start;
+    align-items: space-between; 
     padding-top: 64px;
-    padding-bottom: 64px;
+    padding-bottom: 104px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.hero-signup {
+    flex: 1;
 }
 
 h1 {
@@ -51,8 +61,12 @@ h1 {
     margin: 0px;
 }
 
-.hero-signup {
-    flex: auto;
+h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    margin: 0px;
 }
 
 button {
@@ -62,7 +76,9 @@ button {
     border-style: none;
     transition-duration: 0.4s;
     cursor: pointer;
+    flex-shrink: 0;
 }
+
 button.hero-button {
     background-color: #2196f3;
     color: white;
@@ -74,7 +90,7 @@ button.hero-button:hover {
 }
 
 .hero-banner .img-container {
-    width: 1200px;
+    width: 600px;
     height: 250px;
     border-radius: 5px;
     overflow: hidden;
@@ -89,17 +105,120 @@ button.hero-button:hover {
 .info-section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;
 }
 
 .card-section {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 16px;  
+    width: 180px;
 }
 
+.card-image {  
+    height: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+.card-text {
+    text-align: center;
+    color: gray;
+    
+}
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    gap: 8px;  
+    padding-top: 104px;
+    padding-bottom: 104px;
+}
+
+blockquote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 200;
+    color: #1f2937;
+    margin: 0px;
+}
+
+cite {
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.CTA-section {
+    background-color: white;
+    padding-top: 88px;
+    padding-bottom: 88px;
+}
+
+.CTA-banner {
+    background-color: #2196f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+    padding: 40px 40px;
+    border-radius: 8px;
+}
+
+.CTA-text-header {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.CTA-body-text {
+    color: white;
+    font-weight: 200;   
+}
+
+button.CTA-button {
+    background-color: #2196f3;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+}
+
+button.CTA-button:hover {
+    background-color: #ffffff;
+    color: #2196f3;
+}
+
+.footer {
+    background-color: #1f2937;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+
+}
